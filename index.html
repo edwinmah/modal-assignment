@@ -5,49 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modal Assignment</title>
   
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css">
-  <link rel="stylesheet" href="css/accessible-modal-dialog.css">
-  <link rel="stylesheet" href="css/styles.css">
+
 
 </head>
 
   <body>
 
-    <nav class="visuallyhidden focusable">
-      <a href="#content">Skip to content</a>
-    </nav>
-  
-    <header class="site-header">
-      <div class="container">
-        <h1>Modal Assignment</h1>
-      </div>
-    </header>
+    
 
-    <main id="content" aria-label="Content">
-      <div class="container">
-        <div class="projects">
-          <article>
-            <header>
-              <h2>Project One</h2>
-            </header>
-            <div class="entry">
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue.</p>
-              <button class="btn-link" data-a11y-dialog-show="dialog-1">Read more <span class="visuallyhidden focusable">about this project.</span></button>
-            </div>
-          </article>
-
-          <article>
-            <header>
-              <h2>Project Two</h2>
-            </header>
-            <div class="entry">
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
-              <button class="btn-link" data-a11y-dialog-show="dialog-2">Read more <span class="visuallyhidden focusable">about this project.</span></button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </main>
+    
 
     <!-- the modal dialog 1 -->
     <div class="dialog" aria-hidden="true" id="dialog-1">
@@ -56,17 +22,10 @@
         <div role="document">
           <button data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">&times;</button>
 
-          <h1 id="dialogTitle">Project One</h1>
+          <h1 id="dialogTitle">Dialog Title</h1>
           
           <div id="dialogDescription">
-            <img src="https://unsplash.it/480/320/?random" alt="a random image from Unsplash" />
-            <p>Faenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
-            <ul>
-              <li>Sed posuere consectetur est at lobortis.</li>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-            </ul>
+            
           </div>
         </div>
       </div>
@@ -79,26 +38,16 @@
         <div role="document">
           <button data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">&times;</button>
 
-          <h1 id="dialogTitle">Project Two</h1>
+          <h1 id="dialogTitle">Dialog Title</h1>
           
           <div id="dialogDescription">
-            <div class="intrinsic intrinsic-16x9">
-              <iframe src="https://www.youtube.com/embed/qUmfriZoMw0" allow="autoplay; encrypted-media" allowfullscreen class="intrinsic-item"></iframe>
-            </div>
-            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <ul>
-              <li>Etiam porta sem malesuada magna mollis euismod.</li>
-              <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ul>
+            
           </div>
         </div>
       </div>
     </div>    
 
-    <script src="js/accessible-modal-dialog.js"></script>
-    <script src="js/scripts.js"></script>
+
 
   </body>
 
