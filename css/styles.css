@@ -1,0 +1,127 @@
+/*******************/
+/*! General Styles */
+/*******************/
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Georgia, Times, serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/* make images flexible */
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* style the links */
+a {
+  color: #658bbd;
+  text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+  color: #4d6b91;
+}
+
+/*******************/
+/*! Helper Styles  */
+/*******************/
+
+/* hide content visually but still
+make available for screen readers */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Intrinsic Ratios */
+.intrinsic {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.intrinsic-16x9 {
+  padding-bottom: 56.25%;
+}
+
+.intrinsic-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*******************/
+/*! Layout Styles  */
+/*******************/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* center in the browser window */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.25%;
+  max-width: 71.25rem;
+}
+
+/* if grid is *not* supported, do this: */
+@media (min-width: 42.5em) {
+  .projects > article {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -0.25rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+  }
+}
+
+/* if grid is supported, do this: */
+@supports (display: grid) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  /* reset default styles from above */
+  .projects > article {
+    vertical-align: initial;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
